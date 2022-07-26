@@ -1,0 +1,74 @@
+p {
+  color: red;
+}
+
+body {
+  background-color: rgb(43, 40, 40) ;
+  color: green;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+  color: green;
+  width: 500px;
+  border: 1px solid black;
+}
+h1 {
+  color: blue;
+}
+
+.meineTabelle {
+  color: aquamarine;
+}
+
+.nextTest {
+  color: red;
+}
+
+.hi {
+  color: blue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  width: 400px;
+  padding: 10px;
+
+}
+
+.center2 {
+width:800px;
+margin: auto
+}
+
+table, th, td {
+  border: 2px solid rgb(47, 0, 255);
+  border-collapse: collapse ;
+} 
+th, td {
+  background-color:rgb(255, 255, 255) ;
+}
+
+.button {
+  background-color: rgb(24, 147, 255);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  padding: 15px 50px;
+  margin: 40px 190px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 200px;
+  display: inline-block
+
+}
+
+.btn {
+  color: black;
+  background-color:#04AA6D;
+  border-radius: 5px;
+  padding: 1%;
+}
