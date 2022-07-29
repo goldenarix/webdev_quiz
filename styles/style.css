@@ -7,7 +7,7 @@ body {
   color: green;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-a {
+a5 {
   color: green;
   width: 500px;
   border: 1px solid black;
@@ -115,7 +115,6 @@ d {
   
 /* Buttons */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 
@@ -126,14 +125,14 @@ d {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(0, 0, 0);
+    background: black;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
 }
 
-a {
-    position: center;
-    padding: 25px 30px;
+.Hallo {
+    position: relative;
+    padding: 50px 130px;
     display: inline-block;
     margin: 40px 0;
     color: aqua;
@@ -143,12 +142,15 @@ a {
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
+    font-size: 10px;
 }
 
 button {
     background-color: rgba(0, 136, 255, 0);
     border-color: #ffffff00;
+    border-inline-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    font-size: 10px;
 }
 
 a:hover{
