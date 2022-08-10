@@ -120,7 +120,7 @@ d {
 
 
 
-.Antworten {
+.Antworte {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ d {
 
 .Hallo {
     position: relative;
-    padding: 50px 130px;
+    padding: 20px 35px;
     display: inline-block;
     margin: 40px 0;
     color: aqua;
@@ -160,7 +160,7 @@ a:hover{
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
                 0 0 200px #03e9f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+     -webkit-box:below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.333));
 }
 a:nth-child(1){
     filter: hue-rotate(270deg);
@@ -232,14 +232,14 @@ a span:nth-child(5) {
     animation-delay: 0.50s;
 }
 
-@keyframes animate5 
+@keyframes animate5 {
     0%{
         bottom: -100%;
     }
     50%,100%{
         bottom: 100%;
     }
-
+}
 a span:nth-child(4){
     bottom: -100%;
     left: 0;
@@ -256,4 +256,48 @@ a span:nth-child(4){
     50%,100%{
         bottom: 100%;
     }
+}
+
+@keyframes example {
+  0%   {background-color:rgb(119, 0, 255); left:0px; top:0px;}
+  25%  {background-color:rgb(183, 0, 255); left:0px; top:15px;}
+  50%  {background-color:rgb(174, 0, 255); left:0px; top:0px;}
+  75%  {background-color:rgb(77, 0, 128); left:0px; top: 15px;}
+  100% {background-color:rgb(163, 22, 116); left:0px; top:0px;}
+}
+
+c {
+  width: 110px;
+  position: relative;
+  background-color: rgba(255, 0, 0, 0);
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 90;
+  -webkit-animation-direction: alternate-reverse;
+  -o-animation: infinite;
+
+}
+
+d {
+  width: 110px;
+  position: relative;
+  background-color: rgba(255, 0, 0, 0);
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 90;
+  -webkit-animation-direction: alternate-reverse;
+  -o-animation: infinite;
+  ;
+}
+
+
+
+.Hallo {
+  transform: translate(350px);
+}
+
+
+body{
+  background:radial-gradient(#1d1f20,#000);
+  margin:0;
 }

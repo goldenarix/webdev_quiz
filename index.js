@@ -16,7 +16,7 @@ function isPrime(num) {
     }
 }
 
-function updateName() {debugger
+function updateName() {
     const name = prompt(`Enter a new name`);
     para.textContent = `Player1: ${name}`;
     p1.textContent=`Player1: ${name}`
@@ -44,3 +44,8 @@ const p2=document.getElementById("2")
 p1.addEventListener("click",updateName)
 p2.addEventListener("click",updateName2)
 
+data: [
+    {
+        q : "What ist the"
+    }
+]
