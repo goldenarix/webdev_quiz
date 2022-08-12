@@ -1,348 +1,347 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The best Quiz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/quiz_fragen.css">
-  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/quiz_fragen.css" />
   </head>
 
-<body>
- 
- 
-<nav class="navbar" style="background-color:#98bb7b";>
-  <ul class="nav nav-pills nav-fill">
-    <li class="nav-item"><a class="nav-link active" style="background-color: green " href="../index.html">Back Home</a></li>
-</ul>
-</nav>
+  <body>
+    <nav class="navbar" style="background-color: #98bb7b" ;>
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            style="background-color: green"
+            href="../index.html"
+            >Back Home</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-
-<div class="container text-center">
-  <div class="row">
     <div class="container text-center">
       <div class="row">
-        <h1>The best Quiz</h1>
-        <div class="col">
-          <h6>Spieler: Adrian</h6>
+        <div class="container text-center">
+          <div class="row">
+            <h1>The best Quiz</h1>
+            <div class="col">
+              <h6>Spieler: Adrian</h6>
+            </div>
+            <div class="col">
+              <h6>Hier kommt ein Timer hin</h6>
+            </div>
+          </div>
         </div>
-        <div class="col"><h6>Hier kommt ein Timer hin</h6>
-          
-          
-              
+      </div>
 
-
-
+      <div class="row">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h1>Frage:</h1>
+              <hr class="border border-primary border-3 opacity-50" />
+            </div>
+          </div>
         </div>
-      </div> 
-    </div>
-  </div>
-
-  <div class="row">
-    
-    <div class="container text-center">
-      <div class="row">
-        <div class="col"> <h1>Frage:</h1> <hr class="border border-primary border-3 opacity-50"></div>
-      </div>
-    </div>
-    <div class="container text-align">
-      <div class="row">
-        <div class="col"><div class="shadow p-3 mb-5 bg-body rounded"><h3>In welcher Stadt findet die Documenta statt?</h3></div></div>
-      </div>
-    </div>
-   
-          
-
-
-<div class="container text-center">
-  <div class="row">
-
-      <div class="card"  style="background-color: rgba(100, 113, 136, 0.63) ;">
-      <div class="card-body">
+        <div class="container text-align">
+          <div class="row">
+            <div class="col">
+              <div class="shadow p-3 mb-5 bg-body rounded">
+                <h3 id="frage">In welcher Stadt findet die Documenta statt?</h3>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="container text-center">
           <div class="row">
-            <div class="container text-center">
-              <div id="1" class="row">
-
-                <div class="col">
-                <div class="list-group">
-                  <input type="radio" name="RadioInputName" value="Value1" id="Radio1">
-                  <label id="Value1" class="list-group-item" for="Radio1">A: Hamburg</label></div>
-                </div>
-
-                <div class="col">
-                  <div class="list-group">
-                  <input type="radio" name="RadioInputName" value="Value2" id="Radio2">
-                    <label id="ja" class="list-group-item" for="Radio2">B: Kassel</label></div>
-                    </div>
-                <!--
-                <div class="col"> <div  class="toggle-buttons"  style="width: 20rem ;"> <input type="radio" id="b1" name="group-b"> <label for="b1">Hamburg</label></div></div>
-                <div class="col"> <div class="btn btn-info"  style="width: 20rem ;"> <h4>Kassel</h4></div></div>-->
+            <div
+              class="card"
+              style="background-color: rgba(100, 113, 136, 0.63)"
+            >
+              <div class="card-body">
                 <div class="container text-center">
-                <div class="row">
-               <div class="column"><h4></h4></div>
-              </div>
-            </div>
-           </div>
-         </div>
-      </div>
-   </div>
-
-   <div class="container text-center">
-    <div class="row">
-          <div class="container text-center">
-            <div class="row">
-              <div class="container text-center">
-                <div id="2" class="row">
-                  <div class="col">
-
-                    <div class="list-group">
-                     <input type="radio" name="RadioInputName" value="Value3" id="Radio3">
-                       <label id="Value3" class="list-group-item" for="Radio3">C: Frankfurt am Main</label></div>
-
-                   </div>
-                   <div class="col">
-                    <div class="list-group">
-                     <input type="radio" name="RadioInputName" value="Value4" id="Radio4">
-                       <label id="Value4" class="list-group-item" for="Radio4">D: München</label></div>
-                   </div>
-                  <!--
-                  <div class="col"> <div class="btn btn-info"  style="width: 20rem ;"> <h4>Frankfurt am Main</h4></div></div>
-                  <div class="col"> <div class="btn btn-info"  style="width: 20rem ;"> <h4>München</h4></div></div>-->
-                  <div class="container text-center">
                   <div class="row">
-                 <div class="column"><h4></h4></div>
+                    <div class="container text-center">
+                      <div id="1" class="row">
+                        <div class="col">
+                          <div class="list-group">
+                            <input
+                              type="radio"
+                              name="RadioInputName"
+                              value="Value1"
+                              id="Radio1"
+                            />
+                            <label
+                              id="Value1"
+                              class="list-group-item"
+                              for="Radio1"
+                              >A: Hamburg</label
+                            >
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="list-group">
+                            <input
+                              type="radio"
+                              name="RadioInputName"
+                              value="Value2"
+                              id="Radio2"
+                            />
+                            <label
+                              id="Value2"
+                              class="list-group-item"
+                              for="Radio2"
+                              >B: Kassel</label
+                            >
+                          </div>
+                        </div>
+                        <div class="container text-center">
+                          <div class="row">
+                            <div class="column">
+                              <h4></h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="container text-center">
+                          <div id="2" class="row">
+                            <div class="col">
+                              <div class="list-group">
+                                <input
+                                  type="radio"
+                                  name="RadioInputName"
+                                  value="Value3"
+                                  id="Radio3"
+                                />
+                                <label
+                                  id="Value3"
+                                  class="list-group-item"
+                                  for="Radio3"
+                                  >C: Frankfurt am Main</label
+                                >
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="list-group">
+                                <input
+                                  type="radio"
+                                  name="RadioInputName"
+                                  value="Value4"
+                                  id="Radio4"
+                                />
+                                <label
+                                  id="Value4"
+                                  class="list-group-item"
+                                  for="Radio4"
+                                  >D: München</label
+                                >
+                              </div>
+                            </div>
+                            <div class="container text-center">
+                              <div class="row">
+                                <div class="column">
+                                  <h4></h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <h3 id="wrong" style="color: rgb(255, 0, 0)"></h3>
+                      <h3 id="right" style="color: rgb(0, 255, 0)"></h3>
+                      <h5 id="error" style="color: rgb(255, 0, 0)"></h5>
+                    </div>
+                    <div class="text-center">
+                      <a
+                        class="btn btn-success"
+                        type="button"
+                        id="proof"
+                        onclick="answercheck()"
+                      >
+                        <h5>Weiter</h5>
+                      </a> 
+                      <div class="text-end"> <a class="btn btn-info" id="disableColor" type="button" ondblclick="answercheck()" onclick="nextquestion()">Nächste Frage</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-             </div>
-           </div>
-        </div>
+</div> 
 
-<h3 id="wrong" style="color: rgb(255, 0, 0);"></h3>
-<h3 id="right" style="color: rgb(0, 255, 0);"></h3>
+              <p id="output"></p>
+            </div>
+          </div>
 
-<h5 id="error" style="color: rgb(255, 0, 0);"></h5>
-        </div>
-          <div class="text-center">
-          <a  class="btn btn-success" type="button" id="proof" onclick="test()"><strong><h5>Weiter</h5></a>
-          </div></div>
+      </div>
+      <div class="row">
+        <p>next</p>
       </div>
     </div>
 
- <!--<p><input type="button" id="proof" onclick="test()"><h5>Weiter</h5></p>-->
-
-
-    <p id="output"></p>
-      </div>
-      </div>
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-          <!--Button A
-          <button type="button" class="btn btn-danger" onclick="move()" value="Submit Button">A: Test</button>
-          
-          <Button B
-          <button type="button" class="btn btn-primary" value="Submit Button">B: Test</button>
-          
-          Button C
-          <button type="button" class="btn btn-warning" value="Submit Button">C: Test</button>
-          
-          Button D
-          <button type="button" class="btn btn-success" value="Submit Button">D: Test</button>-->
-        
-
-
-
-
-
-
-          
-    
-    
-  </div>
-
-  </div>
-  <div class="row">
-    <p>next</p>
-  </div>
-</div>
-
-
-
-
-<div class="container">
-    <h1></h1>
-    <p>Text</p>
-</div>
-
-
-
-
-
-
-
-
-
-<!--Fortschrittsbalken
-richtige Antwort
-<div class="progress">
-    <div id="mybar" class="progress-bar progress-bar-striped active progress-bar-success progress-bar-animated" 
-        role="progressbar" 
-        aria-valuenow="0" 
-        aria-valuemin="0" 
-        aria-valuemax="100" 
-        style="width:0%"> 
-        40% richtig beantwortet
+    <div class="container">
+      <h1></h1>
+      <p>Text</p>
     </div>
 
-falsche Antwort
-    <div class="progress-bar progress-bar-danger progress-bar-animated progress-bar-striped" 
-        role="progressbar" 
-        aria-valuenow="0" 
-        aria-valuemin="0" 
-        aria-valuemax="100" 
-        style="width: 0%"> 
-        20% falsch beantwortet
-    </div>
+    <ul class="pager">
+      <li><a href="/">Vorherige Frage</a></li>
+      <li><a href="/">Nächste Frage</a></li>
+    </ul>
 
-    fortschritt-
-    <div class="progress-bar progress-bar-striped active progress-bar-info progress-bar-animated"
-        role="progressbar" 
-        aria-valuenow="0" 
-        aria-valuemin="0" 
-        aria-valuemax="100" 
-        style="width:0%">
-    </div>
-->
- 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/countdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="../js/quiz_fragen.js"></script> -->
+
     <script>
-        function move() {
-            var elem = document.getElementById("mybar");
-            var width = 20;
-            var id = setInterval(frame, 8);
-            function frame() {
-                if (width >= 100) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + `%`;
-                    elem.innerHTML = width * 1 + `%`;
-                }
-            }
+      answercheck = () => {
+        var getSelectedValue = document.querySelector(
+          'input[name="RadioInputName"]:checked'
+        );
+
+        if (getSelectedValue != null) {
+        } else {
+          document.getElementById("wrong").innerHTML =
+            "*Keine Antwort ausgewählt";
         }
 
-       
-    </script>
+        choosedValue = $("input[name='RadioInputName']:checked")[0].value;
+
+        const obj = JSON.parse(text);
+        if ( choosedValue == obj.questions[counterValue].correctAnswer) {
 
 
+          console.log("Yeah");
 
+          document.getElementById("right").innerHTML = "Yeahh";
 
-/Vorherige/Nächste Frage-->
+          const proof = document.getElementById(`proof`);
+          {
+            const input = document.getElementById(obj.questions[counterValue].correctAnswer);
+            input.style.backgroundColor = `green`;
+          }
+        } else {
+          console.log("Bäääh");
+          document.getElementById("wrong").innerHTML = "Bäääh";
 
-<ul class="pager">
-    <li><a href="/">Vorherige Frage</a></li>
-    <li><a href="/">Nächste Frage</a></li>
-</ul>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="../js/countdown.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--<script src="../js/quiz_fragen.js"></script> -->
-
-
-
-
-
-
-
-
-
-<script>
-
-
- test = () => {
-
-  
-            var getSelectedValue = document.querySelector(   
-                'input[name="RadioInputName"]:checked');   
-                
-            if(getSelectedValue != null) {   
-                 
-            }   
-            else {   
-                document.getElementById("wrong").innerHTML   
-                    = "*Keine Antwort ausgewählt";   
-            }   
-           
-
-        	choosedValue = $("input[name='RadioInputName']:checked")[0].value;
-
-          if(choosedValue == "Value2"){
-            console.log("Yeah");
-            document.getElementById("right").innerHTML = "Yeahh" ;
-
+          if (choosedValue) {
             const proof = document.getElementById(`proof`);
-            {
-              const input = document.getElementById(`ja`);
-              input.style.backgroundColor = `green`;
-            }
-  }
-          else{
-            console.log("Bäääh");
-            document.getElementById("wrong").innerHTML = "Bäääh"; 
-           
- if(choosedValue) {
-              const proof = document.getElementById(`proof`);
-             
+
             {
               const input = document.getElementById(choosedValue);
               input.style.backgroundColor = `red`;
-            }}}
+            }
+          }
+        }
+
+        const input = document.getElementById(obj.questions[counterValue].correctAnswer);
+        input.style.backgroundColor = `green`;
+
+        let c = document.querySelectorAll("list-group-item");
+        let i;
+        for (i in c) {
+          c[i].className = "list-group-item disabled";
+        }
+
+        disable();
+      };
+
+      function disable() {
+        for (var value = 1; value < 5; value++) {
+          document.getElementById("Value" + value).className =
+            "list-group-item disabled";
+          {
+            console.log(`Value`);
+          }
+        }
+      }
 
 
-}
- 
+let text = `{"questions":[` +
+  `{"question":"Wo findet die Documenta statt?","answer1":"Hamburg","answer2":"Kassel","answer3":"München","answer4":"Frankfurt am Main", "correctAnswer":"Value2"},` +
+  `{"question":"Frage2","answer1":"Antwort1","answer2":"Antwort2","answer3":"Antwort3","answer4":"Antwort4", "correctAnswer":"Value4"},` +
+  `{"question":"Frage3","answer1":"Antwort","answer2":"Antwort2","answer3":"Antwort3","answer4":"Antwort4", "correctAnswer":"Value1"}]}`;
 
 
 
-              
-             // const input = document.getElementsByName (`red`)[0].style.background = "red";
-              
-             
-          
+ var counterValue = 0
+  function nextquestion() {
+      updateDisplay(++counterValue);
+
+      	$('.list-group').find('label').removeClass('disabled').end().find('[type="radio"]').prop('checked', false);
+
+        //document.getElementById(choosedValue).style.backgroundColor = "";
+        document.getElementById("Value1").removeAttribute("style");
+        document.getElementById("Value2").removeAttribute("style");
+        document.getElementById("Value3").removeAttribute("style");
+        document.getElementById("Value4").removeAttribute("style");
         
-            
-            
-          
+        document.getElementById("wrong").ariaReadOnly = true;
+        document.getElementById("right").style.color = "transparent";
+        document.getElementById("error").style.color = "transparent";
 
 
-          console.log(choosedValue);
-        ;
+
+
+        
+  }
+
+   
+function updateDisplay(value) {
+       if (counterValue <= 2){ 
+      console.log(counterValue)
+
+const obj = JSON.parse(text);
+document.getElementById("frage").innerHTML =
+obj.questions[counterValue].question + " ";
+
+document.getElementById("Value1").innerHTML =
+obj.questions[counterValue].answer1 + " ";
+
+document.getElementById("Value2").innerHTML =
+obj.questions[counterValue].answer2 + " ";
+
+document.getElementById("Value3").innerHTML =
+obj.questions[counterValue].answer3 + " ";
+
+document.getElementById("Value4").innerHTML =
+obj.questions[counterValue].answer4 + " ";}
+
+else {
+
+  console.log(`Zur Auswertung`)
+}
+
+
+
+} 
+
+
 
 </script>
 
-
-</body>
+  </body>
 </html>
-
-
-

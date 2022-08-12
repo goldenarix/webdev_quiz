@@ -8,7 +8,6 @@ display: none;
 }
 
 .list-group-input[type="radio"] + .list-group-item::before {
-    content: ;
     color: transparent;
     font-weight: bold;
     margin-right: 1em;
@@ -19,7 +18,7 @@ display: none;
     color: #FFF;
   }
   
-  .list-group input[type="radio"]:checked + .list-group-item:before {
+  .list-group input[type=value"radio"]:checked + .list-group-item:before {
     color: inherit;
   }
   
@@ -27,3 +26,6 @@ display: none;
     .list-group:hover{
   transform: scale(1.03);
   }
+
+
+
